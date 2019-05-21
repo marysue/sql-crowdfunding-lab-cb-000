@@ -1,0 +1,1 @@
+CREATE TABLE Projects (	id INTEGER PRIMARY KEY AUTOINCREMENT,	title VARCHAR(100),	category VARCHAR(100),	funding_goal INT,	startDate DATE,	endDate DATE);CREATE TABLE Pledges (	id INT PRIMARY KEY IDENTITY,	amount INT,	user_id INT,	project_id INT);CREATE TABLE Users (	id INT PRIMARY KEY IDENTITY,	name VARCHAR(100),	age INT);
